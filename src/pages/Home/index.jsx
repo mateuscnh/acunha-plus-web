@@ -38,13 +38,12 @@ const Home = () => {
 
   useEffect(() => {
     let timer;
-    if (data) {
-      timer = setTimeout(() => {
-        openNotification();
-      }, 2 * 1000);
-    }
+    timer = setTimeout(() => {
+      openNotification();
+    }, 4 * 1000);
+
     return () => clearTimeout(timer);
-  }, [data, openNotification]);
+  }, [openNotification]);
 
   if (!data) {
     return <SpinPage />;

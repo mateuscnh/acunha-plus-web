@@ -16,7 +16,7 @@ export const SessionProvider = ({ children }) => {
   const { data: allInteractions } = useSwr(
     userLogged ? `/interactions/${userLogged?.id}` : null,
     undefined,
-    { refreshInterval: 3 * 1000 }
+    { refreshInterval: 2 * 1000 }
   );
 
   const { data: allRecommendationsInteractions } = useSwr(
@@ -24,7 +24,7 @@ export const SessionProvider = ({ children }) => {
       ? `/recommendations/interactions/${userLogged?.id}`
       : null,
     undefined,
-    { refreshInterval: 3 * 1000 }
+    { refreshInterval: 2 * 1000 }
   );
 
   useEffect(() => {
