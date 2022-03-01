@@ -69,7 +69,7 @@ const Recommendations = () => {
   return (
     <S.ContainerFinished>
       <S.Content>
-        <h1>Obrigado!</h1>
+        <h1>{`Obrigado, ${userLogged?.name}!`}</h1>
         <p>
           As suas recomendações foram realizadas a partir de algoritmos
           utilizados em sistemas de recomendação, aplicando

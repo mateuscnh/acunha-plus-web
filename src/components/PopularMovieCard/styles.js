@@ -61,7 +61,6 @@ export const ImageContent = styled.div`
   z-index: 0;
   position: relative;
   height: 100%;
-  background: red;
 `;
 
 export const Mask = styled.div`

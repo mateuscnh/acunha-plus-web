@@ -38,8 +38,8 @@ const Identification = () => {
         <S.Content>
           <Logo width="80%" />
           <p>
-            Avalie os filmes que você já assistiu e veja quais o sistema lhe
-            recomendará.
+            Avalie os filmes que você já assistiu e veja quais iremos lhe
+            recomendar.
           </p>
           <Card style={{ maxWidth: 480, margin: "0 auto" }}>
             <S.Title>Sobre você</S.Title>
