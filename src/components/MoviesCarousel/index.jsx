@@ -47,7 +47,6 @@ const MoviesCarousel = ({ data }) => {
   const swiperSettings = useMemo(
     () => ({
       modules: [Navigation, A11y],
-      allowTouchMove: false,
       onInit: (swiper) => {
         swiper.params.navigation.prevEl = elNavLeft.current;
         swiper.params.navigation.nextEl = elNavRight.current;
