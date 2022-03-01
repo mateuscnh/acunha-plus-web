@@ -7,6 +7,7 @@ const finished = keyframes`
 `;
 
 export const Container = styled.div`
+  padding-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   opacity: 0;
