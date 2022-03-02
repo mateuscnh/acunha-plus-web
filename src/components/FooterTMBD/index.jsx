@@ -1,7 +1,6 @@
 import React from "react";
 
 import * as S from "./styles";
-import { Button } from "antd";
 
 import { ReactComponent as TmdbLogo } from "@assets/icons/logo-tmdb.svg";
 

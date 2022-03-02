@@ -14,12 +14,13 @@ export const Container = styled.div`
   animation: ${finished} 0.3s forwards;
   > img {
     margin: 16px;
-    height: 260px;
+    height: 220px;
   }
 `;
 
 export const Content = styled.div`
-  max-width: 56%;
+  padding: 8%;
+  max-width: 100%;
   h1 {
     font-size: 2rem;
   }
@@ -29,10 +30,8 @@ export const Content = styled.div`
   }
 
   strong {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: ${({ theme }) => theme.colors.primary};
-    font-weight: bold;
-    text-transform: uppercase;
     margin: 0 6px;
   }
 

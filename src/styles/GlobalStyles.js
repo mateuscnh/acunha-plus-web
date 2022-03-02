@@ -84,4 +84,18 @@ export default createGlobalStyle`
             background: transparent;
         }
     }
+
+    .ant-popover {
+        .ant-popover-arrow{
+            display: none;
+        }
+        .ant-popover-inner{
+            border: 1px solid ${(props) => props.theme.colors.black_light};
+            background: ${(props) => props.theme.colors.black};
+            border-radius: 8px;
+            .ant-popover-inner-content{
+                color: ${(props) => props.theme.colors.white};
+            }
+        }
+    }
 `;

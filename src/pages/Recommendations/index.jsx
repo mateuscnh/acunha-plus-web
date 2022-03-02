@@ -7,7 +7,7 @@ import MovieDetails from "@src/components/MovieDetails/index";
 import { SessionContext } from "@src/store/SessionProvider";
 import MovieCard from "@src/components/MovieCard/index";
 import Footer from "@src/components/Footer/index";
-import { Tooltip, notification } from "antd";
+import { Tooltip, notification, Popover } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
@@ -75,22 +75,22 @@ const Recommendations = () => {
           utilizados em sistemas de recomendação, aplicando
           <strong>
             filtragem colaborativa
-            <Tooltip
-              title="Itens recomendados de acordo com itens avaliados por outros
+            <Popover
+              content="Itens recomendados de acordo com itens avaliados por outros
             usuários"
             >
               <InfoCircleOutlined />
-            </Tooltip>
+            </Popover>
           </strong>
           e
           <strong>
             filtragem baseada em conteúdo
-            <Tooltip
-              title="Itens recomendados a partir das características, neste experimento
+            <Popover
+              content="Itens recomendados a partir das características, neste experimento
               foram utilizados os gêneros dos filmes"
             >
               <InfoCircleOutlined />
-            </Tooltip>
+            </Popover>
           </strong>
         </p>
       </S.Content>

@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect } from "react";
 import useSwr from "@src/hooks/userSwr";
 import SpinPage from "@src/components/SpinPage";
 import MoviesCarousel from "@src/components/MoviesCarousel/index";
