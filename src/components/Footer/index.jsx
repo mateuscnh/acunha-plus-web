@@ -38,7 +38,7 @@ const Footer = ({ recommendationsTotal }) => {
       isRecommendation: true,
     }));
     notification.destroy();
-    sessionStorage.setItem("acunha_plus_is_recommendation", "true");
+    localStorage.setItem("acunha_plus_is_recommendation", "true");
     navigate("/recommendations");
   }, [navigate, setUserLogged]);
 
@@ -69,7 +69,7 @@ const Footer = ({ recommendationsTotal }) => {
 
   useEffect(() => {
     if (interactionsPercentage >= 100 && userLogged?.isRecommendation) {
-      sessionStorage.setItem("acunha_plus_is_finished", "true");
+      localStorage.setItem("acunha_plus_is_finished", "true");
       setUserLogged((oldUser) => ({
         ...oldUser,
         isFinished: true,

@@ -42,10 +42,10 @@ export const SessionProvider = ({ children }) => {
   }, [allRecommendationsInteractions]);
 
   useEffect(() => {
-    const id = sessionStorage.getItem("acunha_plus_user_id");
-    const name = sessionStorage.getItem("acunha_plus_user_name");
-    const stepFinal = sessionStorage.getItem("acunha_plus_is_recommendation");
-    const finished = sessionStorage.getItem("acunha_plus_is_finished");
+    const id = localStorage.getItem("acunha_plus_user_id");
+    const name = localStorage.getItem("acunha_plus_user_name");
+    const stepFinal = localStorage.getItem("acunha_plus_is_recommendation");
+    const finished = localStorage.getItem("acunha_plus_is_finished");
     if (id && name) {
       setUserLogged({
         id: Number(id),

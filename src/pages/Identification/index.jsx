@@ -25,8 +25,8 @@ const Identification = () => {
       id: data.id,
       name,
     });
-    sessionStorage.setItem("acunha_plus_user_id", data.id);
-    sessionStorage.setItem("acunha_plus_user_name", name);
+    localStorage.setItem("acunha_plus_user_id", data.id);
+    localStorage.setItem("acunha_plus_user_name", name);
     navigate("/");
     setIsLoading(false);
   }, [name, navigate, setUserLogged]);
