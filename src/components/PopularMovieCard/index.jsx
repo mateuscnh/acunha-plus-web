@@ -13,6 +13,10 @@ const PopularMovieCard = ({ movie, ...props }) => {
     setIsShowMovieDetails(true);
   }, [setSelectedMovieId, setIsShowMovieDetails, movie]);
 
+  if (!movie?.poster_path) {
+    return <></>;
+  }
+
   return (
     <S.Container onClick={handleMovieClicked}>
       <S.Content>
@@ -23,7 +27,7 @@ const PopularMovieCard = ({ movie, ...props }) => {
         <S.Mask />
         <S.Image
           alt={movie?.title}
-          src={!!movie?.poster_path && `${IMG_BASE_URL}${movie?.backdrop_path}`}
+          src={`${IMG_BASE_URL}${movie?.backdrop_path}`}
         />
       </S.ImageContent>
     </S.Container>

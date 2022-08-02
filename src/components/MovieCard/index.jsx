@@ -23,13 +23,17 @@ const MovieCard = ({ movie, allInteractions, ...props }) => {
     setIsShowMovieDetails(true);
   }, [setSelectedMovieId, setIsShowMovieDetails, movie]);
 
+  if (!movie?.poster_path) {
+    return <></>;
+  }
+
   return (
     <Tooltip title={movie?.title} placement="bottom" {...props}>
       <S.Image
         alt={movie?.title}
         disabled={movieHasBeenRated}
         onClick={handleMovieClicked}
-        src={!!movie?.poster_path && `${IMG_BASE_URL}${movie?.poster_path}`}
+        src={`${IMG_BASE_URL}${movie?.poster_path}`}
         isDetailsVisible={selectedMovieId === movie?.id}
       />
     </Tooltip>
